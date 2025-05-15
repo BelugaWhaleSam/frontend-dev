@@ -15,17 +15,23 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
-    animation: {
-      aurora: "aurora 60s linear infinite",
-    },
-    keyframes: {
-      aurora: {
-        from: {
-          backgroundPosition: "50% 50%, 50% 50%",
+    extend: {
+      animation: {
+        aurora: "aurora 60s linear infinite",
+        fadeIn: "fadeIn 0.3s ease-in forwards",
+      },
+      keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
         },
-        to: {
-          backgroundPosition: "350% 50%, 350% 50%",
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
     },

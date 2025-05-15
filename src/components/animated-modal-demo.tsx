@@ -16,23 +16,23 @@ export function AnimatedModalDemo() {
     {
       id: 1,
       name: "Chaitanya SK",
-      designation: "+1 (817) XXX-XXXX",
+      designation: "cxs3863@mavs.uta.edu",
       image:
-        "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
+        "/team/csk.jpg",
     },
     {
       id: 2,
-      name: "Aashna Ratnani",
-      designation: "+1 (817) XXX-XXXX",
+      name: "Usman Mohd",
+      designation: "muk1753@mavs.uta.edu",
       image:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        "/team/usma.jpg",
     },
     {
       id: 3,
       name: "Abhishek Nagaraja",
-      designation: "+1 (817) XXX-XXXX",
+      designation: "abhishek.nagaraja@uta.edu",
       image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+        "/team/abhishek.jpg",
     },
   ];
 
@@ -81,6 +81,9 @@ export function AnimatedModalDemo() {
                 <div>
                   <h5 className="font-medium mb-1">Contacts</h5>
                   <p className="text-sm">ec@uta.edu</p>
+                  <p className="text-sm">cxs3863@mavs.uta.edu</p>
+                  <p className="text-sm">abhishek.nagaraja@uta.edu</p>
+                  <p className="text-sm">muk1753@mavs.uta.edu</p>
                   <p className="text-sm">+1 214-604-2001</p>
                 </div>
               </div>

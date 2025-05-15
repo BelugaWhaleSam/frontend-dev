@@ -33,20 +33,18 @@ const HomePage = () => {
         transition={{ duration: 0.3, delay: 0.5 }}
         className="relative z-10 mx-auto flex flex-col items-center justify-center"
       >
-        <div className="w-24 h-24 p-2 rounded-full shadow-inner overflow-hidden bg-black flex items-center justify-center">
-          <Image
-            src="/logo/Logo.png"
-            alt="Club ABC Logo"
-            width={80}
-            height={80}
-            className="object-contain"
-          />
-        </div>
+        <Image
+          src="/logo/Logo.png"
+          alt="Club ABC Logo"
+          width={100}
+          height={100}
+          className="mb-2"
+        />
         <span className="text-lg font-medium text-slate-400 mt-2 mb-2">
           Entrepreneurship Club presents
         </span>
       </motion.div>
-      <div className="px-4 py-15 md:py-10">
+      <div className="px-4 py-15">
         <h1 className="relative z-10 mx-auto max-w-4xl text-center text-5xl sm:text-5xl md:text-5xl lg:text-7xl font-bold text-slate-300">
           {"You know the business and we know the chemistry 🤫"
             .split(" ")
@@ -89,10 +87,10 @@ const HomePage = () => {
           className="relative z-10 mx-auto mt-2 flex flex-col items-center justify-center"
         >
           <span className="text-lg font-medium text-slate-400 mb-2">
-            Sponsored by
+            In association with
           </span>
           <Image
-            className="mb-2 rounded-full"
+            className="mb-2"
             src="/logo/CenterLogo.png"
             alt="Sponsor Logo"
             width={100}
