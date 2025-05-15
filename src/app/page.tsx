@@ -3,6 +3,7 @@ import React, { useEffect, useState, Suspense } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import dynamic from "next/dynamic";
 import Loading from "@/components/loading";
+import { ExpandableCardDemo } from "@/layouts/frequently-layout";
 
 const withMinLoadTime = (
   Component: React.ComponentType,
@@ -85,8 +86,8 @@ const AnimatedSection: React.FC<{
     className={className}
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.5, delay }}
+    viewport={{ once: true, margin: "-100px" }}
+    transition={{ duration: 0.3, delay }}
   >
     {children}
   </motion.section>
@@ -100,7 +101,7 @@ export default function Home() {
     setIsMounted(true);
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -111,32 +112,20 @@ export default function Home() {
 
   return (
     <AnimatePresence mode="wait">
-      <main className="w-full relative overflow-x-hidden">
-        <Suspense fallback={<Loading />}>
-          <AnimatedSection delay={0.5}>
-            <StickyBannerDemo />
-          </AnimatedSection>
-
-          <AnimatedSection>
-            <HomePage />
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.2}>
-            <FeaturesSectionDemo />
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.3}>
-            <TimelineDemo />
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.4}>
-            <AnimatedTestimonialsDemo />
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.5} className="w-full relative">
-            <ParallaxScrollDemo />
-          </AnimatedSection>
-        </Suspense>
+      <main className="w-full min-h-screen relative overflow-x-hidden">
+        <div className="min-h-screen">
+          <Suspense fallback={<Loading />}>
+            <AnimatedSection>
+              <StickyBannerDemo />
+              <HomePage />
+              <FeaturesSectionDemo />
+              <TimelineDemo />
+              <ExpandableCardDemo />
+              <AnimatedTestimonialsDemo />
+              <ParallaxScrollDemo />
+            </AnimatedSection>
+          </Suspense>
+        </div>
       </main>
     </AnimatePresence>
   );

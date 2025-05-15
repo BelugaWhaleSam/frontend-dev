@@ -11,7 +11,7 @@ interface FlipWordsProps {
 
 export const FlipWords: React.FC<FlipWordsProps> = ({
   words,
-  duration = 300,
+  duration = 200,
   className,
 }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
