@@ -7,7 +7,7 @@ export function StickyBannerDemo() {
         <div className="flex items-center justify-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-sm sm:text-base lg:text-lg text-white drop-shadow-md">
             <span className="hidden sm:inline">🎯</span> Registration closes May
-            15, 2024 | Event starts June 1, 2024{" "}
+            Aug, 2025 | Event starts Sept, 2025{" "}
             <a
               href="#"
               className="font-medium transition duration-200 hover:underline whitespace-nowrap"

@@ -248,7 +248,7 @@ const cards = [
         <br />
         • Registration is completely free
         <br />
-        • Applications close November 25, 2024
+        • Applications close Aug 25, 2025
         <br />
         • Rolling acceptance notifications
         <br />
