@@ -56,8 +56,8 @@ const HomePage = () => {
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold text-slate-300"
         >
           <span className="block mb-4">
-            At <span className="text-orange-500">MAVSTHINK 2025</span> UTA's
-            flagship 2-day Business Hackathon, we help you
+            At <span className="text-orange-500">MAVSTHINK 2025</span> we help
+            you
             <span className="inline-flex items-center gap-2">
               <FlipWords words={words} />
             </span>
